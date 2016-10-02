@@ -15,4 +15,5 @@ Rails.application.routes.draw do
     end
   end
 
+  post 'upload-file', to: 'index#upload_file'
 end

@@ -20,6 +20,11 @@ angular.module('flapperNews', ['ui.router', 'templates'])
                         return myFactory.get($stateParams.id);
                     }]
                 }
+            })
+            .state('file-upload', {
+                url: '/file-upload',
+                templateUrl: 'index/_file-upload.html',
+                controller: 'IndexCtrl'
             });
 
         $urlRouterProvider.otherwise('home');
