@@ -1,0 +1,4 @@
+redis_host: "localhost"
+redis_port: 6379
+redis_session_namespace: "app_session"
+session_expiry: 60

@@ -16,4 +16,12 @@ Rails.application.routes.draw do
   end
 
   post 'upload-file', to: 'index#upload_file'
+  post 'add-user', to: 'user#create'
+  get 'list-users', to: 'user#list_users'
+
+  get 'home', to: 'login#home'
+  post 'login', to: 'login#login'
+  get 'logout', to: 'login#logout'
+  get 'is_authenticated', to: 'login#is_authenticated'
+
 end

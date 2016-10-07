@@ -1,6 +1,7 @@
 class IndexController < ApplicationController
 
   # protect_from_forgery :exception => [:upload_file]
+  before_action :authenticate_session, except: :angular
 
   def angular
     render 'layouts/application'
